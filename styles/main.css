@@ -6,15 +6,20 @@
 		height: 100%;
 		background: #fff;
 		color: #000000;
-		background-image: url(../images/me.jpg);
+		background-image: url(../images/bg.jpg);
 		background-attachment: fixed;
 		background-size: cover;
 		overflow: hidden;
+		-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+		   -moz-animation: fadein 2s; /* Firefox < 16 */
+			-ms-animation: fadein 2s; /* Internet Explorer */
+			 -o-animation: fadein 2s; /* Opera < 12.1 */
+				animation: fadein 2s;
 	}
 
 /* Type */
 
-	body, input, select, textarea {
+	body {
 		color: #313f47;
 		font-family: Helvetica, sans-serif;
 		font-size: 11pt;
@@ -36,11 +41,6 @@
 	    font-weight:bold;
 	    z-index: 600;
 	    position: fixed;
-		-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	       -moz-animation: fadein 2s; /* Firefox < 16 */
-	        -ms-animation: fadein 2s; /* Internet Explorer */
-	         -o-animation: fadein 2s; /* Opera < 12.1 */
-	            animation: fadein 2s;
 	}
 
 	/* make the LI display inline
@@ -109,9 +109,8 @@
 	    text-decoration: none;
 	}
 
-	#about {
+	#text {
 		margin: 8px 0 0 0;
-		z-index: 500;
 		padding: 5px 5px 5px 5px;
 		color: white;
 		background: #000;
@@ -130,6 +129,32 @@
 	#spotify:hover {
 		background-color: #1ED760 !important;
 		color: white !important;
+	}
+
+	/* div centers content */
+
+	div {
+		max-width: 90vh;
+		max-height: 75vh;
+		display: inline-flex;
+		flex: 1 1 auto;
+		color: white;
+		background-color: black;
+		font-size: 14pt;
+		font-weight: bold;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+		opacity:.9;
+
+		align-items: center;
+		justify-content:center;
+		position:fixed;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		margin:auto;
 	}
 
 
